@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guessing Game</title>
+  </head>
+  <body>
+    <h1>Guess the Number Game</h1>
+    <p>Try to guess a number between 1 and 10:</p>
+    <input type="text" id="guess" placeholder="Enter your guess" />
+    <button onclick="checkGuess()">Submit Guess</button>
+    <p id="result"></p>
+
+    <script>
+      const randomNumber = Math.floor(Math.random() * 10) + 1;
+
+      function checkGuess() {
+        let userGuess = document.getElementById('guess').value;
+        if (userGuess == randomNumber) {
+          document.getElementById('result').textContent =
+            'Congratulations! You guessed correctly.';
+        } else {
+          document.getElementById('result').textContent = 'Sorry, try again!';
+        }
+      }
+    </script>
+  </body>
+</html>
