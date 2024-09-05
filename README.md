@@ -2,6 +2,6 @@
 
 ## Javascript & HTML guessing number game 
 
-## Python Calculator
+## Python User Info
 
 ## Java display info 
